@@ -19,6 +19,7 @@
         <module>wxyj-web</module>
         <module>wxyj-eureka</module>
         <module>wxyj-common</module>
+        <module>wxyj-common-db</module>
     </modules>
 
     <properties>

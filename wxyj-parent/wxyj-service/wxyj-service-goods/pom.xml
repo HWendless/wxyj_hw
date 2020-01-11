@@ -3,33 +3,29 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>wxyj-parent</artifactId>
+        <artifactId>wxyj-service</artifactId>
         <groupId>com.wxyj</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>wxyj-service</artifactId>
-
-    <packaging>pom</packaging>
-
-    <description>
-        各大微服务的父工程
-    </description>
-    <modules>
-        <module>wxyj-service-goods</module>
-    </modules>
+    <artifactId>wxyj-service-goods</artifactId>
 
     <dependencies>
+        <!--<dependency>-->
+            <!--<groupId>com.wxyj</groupId>-->
+            <!--<artifactId>wxyj-common</artifactId>-->
+            <!--<version>1.0-SNAPSHOT</version>-->
+        <!--</dependency>-->
+
+
         <dependency>
             <groupId>com.wxyj</groupId>
-            <artifactId>wxyj-service-goods-api</artifactId>
+            <artifactId>wxyj-common-db</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-
     </dependencies>
-
 
 
 
