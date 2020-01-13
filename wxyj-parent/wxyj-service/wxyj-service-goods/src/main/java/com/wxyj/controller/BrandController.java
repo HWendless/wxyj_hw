@@ -1,5 +1,6 @@
 package com.wxyj.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.wxyj.goods.pojo.Brand;
 import com.wxyj.goods.pojo.StockBack;
 import com.wxyj.service.BrandService;
@@ -40,6 +41,35 @@ public class BrandController {
     public Result delete(@PathVariable Integer id)
     {
         return  new Result(true,StatusCode.OK,"删除成功");
+    }
+
+
+    /***
+     * 分页搜索实现
+     * @param brand
+     * @param page
+     * @param size
+     * @return
+     */
+    @PostMapping(value = "/search/{page}/{size}" )
+    public Result<PageInfo> findPage(@RequestBody(required = false) Brand brand, @PathVariable  int page, @PathVariable  int size){
+        //执行搜索
+        PageInfo<Brand> pageInfo = brandService.findPage(brand, page, size);
+        return new Result(true,StatusCode.OK,"查询成功",pageInfo);
+    }
+
+
+    /***
+     * 分页搜索实现
+     * @param page:当前页
+     * @param size:每页显示多少条
+     * @return
+     */
+    @GetMapping(value = "/search/{page}/{size}" )
+    public Result<PageInfo> findPage(@PathVariable  int page, @PathVariable  int size){
+        //分页查询
+        PageInfo<Brand> pageInfo = brandService.findPage(page, size);
+        return new Result<PageInfo>(true,StatusCode.OK,"查询成功",pageInfo);
     }
 
 
