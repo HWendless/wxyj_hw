@@ -29,6 +29,7 @@
     <properties>
         <skipTests>true</skipTests>
         <lombok.version>1.16.10</lombok.version>
+        <swagger.version>2.9.2</swagger.version>
     </properties>
 
     <!--依赖包-->
@@ -47,6 +48,30 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.swagger</groupId>
+                    <artifactId>swagger-models</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+
 
     </dependencies>
 

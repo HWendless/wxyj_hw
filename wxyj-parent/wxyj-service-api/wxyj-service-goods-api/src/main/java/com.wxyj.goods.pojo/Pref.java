@@ -1,4 +1,4 @@
-package com.wxyj.goods.pojo;;
+package com.wxyj.goods.pojo;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -33,10 +33,10 @@ public class Pref implements Serializable{
 	private Date endTime;//活动截至日期
 
     @Column(name = "type")
-	private String type;//类型,1:普通订单，2：限时活动
+	private String type;//类型
 
     @Column(name = "state")
-	private String state;//状态,1:有效，0：无效
+	private String state;//状态
 
 
 

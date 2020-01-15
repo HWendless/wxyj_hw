@@ -1,4 +1,4 @@
-package com.wxyj.goods.pojo;;
+package com.wxyj.goods.pojo;
 
 import javax.persistence.*;
 import java.io.Serializable;
