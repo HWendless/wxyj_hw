@@ -19,11 +19,7 @@
         <!--</dependency>-->
 
 
-        <dependency>
-            <groupId>com.wxyj</groupId>
-            <artifactId>wxyj-common-db</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+
 
     </dependencies>
 

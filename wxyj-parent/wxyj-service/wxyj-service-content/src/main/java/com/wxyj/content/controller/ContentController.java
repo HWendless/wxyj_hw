@@ -1,12 +1,14 @@
 package com.wxyj.content.controller;
+
+import com.github.pagehelper.PageInfo;
 import com.wxyj.content.pojo.Content;
 import com.wxyj.content.service.ContentService;
-import com.github.pagehelper.PageInfo;
 import entity.Result;
 import entity.StatusCode;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 /****
@@ -22,6 +24,16 @@ public class ContentController {
 
     @Autowired
     private ContentService contentService;
+
+    /***
+     * 根据categoryId查询广告集合
+     */
+    @GetMapping(value = "/list/category/{id}")
+    public Result<List<Content>> findByCategory(@PathVariable Long id){
+        //根据分类ID查询广告集合
+        List<Content> contents = contentService.findByCategory(id);
+        return new Result<List<Content>>(true,StatusCode.OK,"查询成功！",contents);
+    }
 
     /***
      * Content分页条件搜索实现

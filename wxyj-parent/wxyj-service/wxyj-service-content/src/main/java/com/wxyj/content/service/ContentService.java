@@ -1,13 +1,23 @@
 package com.wxyj.content.service;
-import com.wxyj.content.pojo.Content;
+
 import com.github.pagehelper.PageInfo;
+import com.wxyj.content.pojo.Content;
+
 import java.util.List;
+
 /****
  * @Author:admin
  * @Description:Content业务层接口
  * @Date 2019/6/14 0:16
  *****/
 public interface ContentService {
+
+    /***
+     * 根据categoryId查询广告集合
+     * @param id
+     * @return
+     */
+    List<Content> findByCategory(Long id);
 
     /***
      * Content多条件分页查询

@@ -1,14 +1,17 @@
 package com.wxyj.content.service.impl;
+
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.wxyj.content.dao.ContentMapper;
 import com.wxyj.content.pojo.Content;
 import com.wxyj.content.service.ContentService;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
+
 import java.util.List;
+
 /****
  * @Author:admin
  * @Description:Content业务层接口实现类
@@ -16,6 +19,19 @@ import java.util.List;
  *****/
 @Service
 public class ContentServiceImpl implements ContentService {
+
+    /***
+     * 根据分类ID查询
+     * @param id
+     * @return
+     */
+    @Override
+    public List<Content> findByCategory(Long id) {
+        Content content = new Content();
+        content.setCategoryId(id);
+        content.setStatus("1");
+        return contentMapper.select(content);
+    }
 
     @Autowired
     private ContentMapper contentMapper;

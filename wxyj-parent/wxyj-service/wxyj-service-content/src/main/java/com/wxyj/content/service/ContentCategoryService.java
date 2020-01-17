@@ -1,7 +1,10 @@
 package com.wxyj.content.service;
-import com.wxyj.content.pojo.ContentCategory;
+
 import com.github.pagehelper.PageInfo;
+import com.wxyj.content.pojo.ContentCategory;
+
 import java.util.List;
+
 /****
  * @Author:admin
  * @Description:ContentCategory业务层接口
