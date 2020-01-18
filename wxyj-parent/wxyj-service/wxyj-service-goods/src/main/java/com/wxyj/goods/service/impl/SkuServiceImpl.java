@@ -19,6 +19,16 @@ import java.util.List;
  *****/
 @Service
 public class SkuServiceImpl implements SkuService {
+    /***
+     * 根据状态查询SKU列表
+     * @return
+     */
+    @Override
+    public List<Sku> findByStatus(String status) {
+        Sku sku = new Sku();
+        sku.setStatus(status);
+        return skuMapper.select(sku);
+    }
 
     @Autowired
     private SkuMapper skuMapper;
@@ -155,9 +165,9 @@ public class SkuServiceImpl implements SkuService {
                     criteria.andEqualTo("status",sku.getStatus());
             }
             // 
-            if(!StringUtils.isEmpty(sku.getVersion())){
-                    criteria.andEqualTo("version",sku.getVersion());
-            }
+//            if(!StringUtils.isEmpty(sku.getVersion())){
+//                    criteria.andEqualTo("version",sku.getVersion());
+//            }
         }
         return example;
     }

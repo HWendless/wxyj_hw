@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.60.204:3306/changgou_goods?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
-    password: root
+    password: 123456
   main:
     allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
   redis:

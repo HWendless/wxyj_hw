@@ -72,8 +72,8 @@ public class Sku implements Serializable{
     @Column(name = "status")
 	private String status;//商品状态 1-正常，2-下架，3-删除
 
-    @Column(name = "version")
-	private Integer version;//
+//    @Column(name = "version")
+//	private Integer version;//
 
 
 
@@ -248,15 +248,15 @@ public class Sku implements Serializable{
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	//get方法
-	public Integer getVersion() {
-		return version;
-	}
-
-	//set方法
-	public void setVersion(Integer version) {
-		this.version = version;
-	}
+//	//get方法
+//	public Integer getVersion() {
+//		return version;
+//	}
+//
+//	//set方法
+//	public void setVersion(Integer version) {
+//		this.version = version;
+//	}
 
 
 }

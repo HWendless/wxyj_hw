@@ -24,6 +24,17 @@ public class SkuController {
     @Autowired
     private SkuService skuService;
 
+    /***
+     * 根据审核状态查询Sku
+     * @param status
+     * @return
+     */
+    @GetMapping("/status/{status}")
+    public Result<List<Sku>> findByStatus(@PathVariable("status") String status){
+        List<Sku> list = skuService.findByStatus(status);
+        return new Result<List<Sku>>(true,StatusCode.OK,"查询成功",list);
+    }
+
 
 
 
@@ -35,7 +46,7 @@ public class SkuController {
      * @return
      */
     @PostMapping(value = "/search/{page}/{size}" )
-    public Result<PageInfo> findPage(@RequestBody(required = false)  Sku sku, @PathVariable  int page, @PathVariable  int size){
+    public Result<PageInfo> findPage(@RequestBody(required = false)  Sku sku, @PathVariable("page")  int page, @PathVariable("size")  int size){
         //调用SkuService实现分页条件查询Sku
         PageInfo<Sku> pageInfo = skuService.findPage(sku, page, size);
         return new Result(true,StatusCode.OK,"查询成功",pageInfo);

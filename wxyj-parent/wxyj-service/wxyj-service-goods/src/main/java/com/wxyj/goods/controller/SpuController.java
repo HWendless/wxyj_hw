@@ -155,7 +155,7 @@ public class SpuController {
     @DeleteMapping(value = "/{id}" )
     public Result delete(@PathVariable String id){
         //调用SpuService实现根据主键删除
-        spuService.delete(id);
+        spuService.delete(Long.valueOf(id).longValue());
         return new Result(true,StatusCode.OK,"删除成功");
     }
 
