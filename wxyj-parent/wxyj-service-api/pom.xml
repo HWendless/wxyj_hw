@@ -20,6 +20,7 @@
         <module>wxyj-service-goods-api</module>
         <module>wxyj-service-content-api</module>
         <module>wxyj-service-search-api</module>
+        <module>wxyj-service-user-api</module>
     </modules>
 
     <dependencies>

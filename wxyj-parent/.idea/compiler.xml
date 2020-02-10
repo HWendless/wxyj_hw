@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wxyj-common" />
+        <module name="wxyj-common-db" />
+        <module name="wxyj-eureka" />
+        <module name="wxyj-gateway-web" />
+        <module name="wxyj-service-canal" />
+        <module name="wxyj-service-content" />
+        <module name="wxyj-service-content-api" />
+        <module name="wxyj-service-file" />
+        <module name="wxyj-service-goods" />
+        <module name="wxyj-service-goods-api" />
+        <module name="wxyj-service-search" />
+        <module name="wxyj-service-search-api" />
+        <module name="wxyj-service-user" />
+        <module name="wxyj-service-user-api" />
+        <module name="wxyj-web-search" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

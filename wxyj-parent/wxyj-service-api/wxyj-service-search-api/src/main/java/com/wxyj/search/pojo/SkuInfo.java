@@ -67,5 +67,4 @@ public class SkuInfo implements Serializable {
     //规格参数
     private Map<String,Object> specMap;
 
-    //...略
 }

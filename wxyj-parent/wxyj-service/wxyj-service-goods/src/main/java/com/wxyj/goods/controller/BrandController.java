@@ -133,7 +133,9 @@ public class BrandController {
     @GetMapping
     public Result<List<Brand>> findAll(){
         //调用BrandService实现查询所有Brand
-        List<Brand> list = brandService.findAll();
-        return new Result<List<Brand>>(true, StatusCode.OK,"查询成功",list) ;
+//        List<Brand> list = brandService.findAll();
+//        return new Result<List<Brand>>(true, StatusCode.OK,"查询成功",list) ;
+
+        return new Result<List<Brand>>(true, StatusCode.OK,"查询成功","") ;
     }
 }

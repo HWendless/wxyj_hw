@@ -22,6 +22,7 @@
         <module>wxyj-service-canal</module>
         <module>wxyj-service-content</module>
         <module>wxyj-service-search</module>
+        <module>wxyj-service-user</module>
     </modules>
 
     <dependencies>
