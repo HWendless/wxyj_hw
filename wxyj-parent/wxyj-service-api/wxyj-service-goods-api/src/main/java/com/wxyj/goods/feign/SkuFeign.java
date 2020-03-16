@@ -12,6 +12,15 @@ import java.util.List;
 public interface SkuFeign {
 
     /***
+     * 根据ID查询Sku数据
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
+    Result<Sku> findById(@PathVariable("id") String id);
+
+
+    /***
      * 根据审核状态查询Sku
      * @param status
      * @return

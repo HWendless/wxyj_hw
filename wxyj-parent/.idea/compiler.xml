@@ -16,10 +16,13 @@
         <module name="wxyj-service-file" />
         <module name="wxyj-service-goods" />
         <module name="wxyj-service-goods-api" />
+        <module name="wxyj-service-order" />
+        <module name="wxyj-service-order-api" />
         <module name="wxyj-service-search" />
         <module name="wxyj-service-search-api" />
         <module name="wxyj-service-user" />
         <module name="wxyj-service-user-api" />
+        <module name="wxyj-user-oauth" />
         <module name="wxyj-web-search" />
       </profile>
     </annotationProcessing>

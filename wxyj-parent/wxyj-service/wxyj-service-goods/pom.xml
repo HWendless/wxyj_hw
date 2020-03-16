@@ -23,6 +23,11 @@
             <artifactId>wxyj-service-search-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--需要解密用的包-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
 
 
 

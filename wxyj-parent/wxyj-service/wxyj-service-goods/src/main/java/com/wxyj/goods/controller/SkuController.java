@@ -122,7 +122,7 @@ public class SkuController {
      * @return
      */
     @GetMapping("/{id}")
-    public Result<Sku> findById(@PathVariable String id){
+    public Result<Sku> findById(@PathVariable(value = "id") String id){
         //调用SkuService实现根据主键查询Sku
         Sku sku = skuService.findById(id);
         return new Result<Sku>(true,StatusCode.OK,"查询成功",sku);

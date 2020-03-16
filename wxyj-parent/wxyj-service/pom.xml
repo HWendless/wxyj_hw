@@ -23,6 +23,7 @@
         <module>wxyj-service-content</module>
         <module>wxyj-service-search</module>
         <module>wxyj-service-user</module>
+        <module>wxyj-service-order</module>
     </modules>
 
     <dependencies>

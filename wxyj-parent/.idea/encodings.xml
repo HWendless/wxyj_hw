@@ -11,14 +11,17 @@
     <file url="file://$PROJECT_DIR$/wxyj-service-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wxyj-service-api/wxyj-service-content-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wxyj-service-api/wxyj-service-goods-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wxyj-service-api/wxyj-service-order-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wxyj-service-api/wxyj-service-search-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wxyj-service-api/wxyj-service-user-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wxyj-service/wxyj-service-canal" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wxyj-service/wxyj-service-content" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wxyj-service/wxyj-service-file" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wxyj-service/wxyj-service-goods" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wxyj-service/wxyj-service-order" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wxyj-service/wxyj-service-search" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wxyj-service/wxyj-service-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wxyj-user-oauth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wxyj-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wxyj-web/wxyj-web-search" charset="UTF-8" />
   </component>

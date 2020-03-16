@@ -6,9 +6,11 @@ import com.github.pagehelper.PageInfo;
 import com.wxyj.user.pojo.User;
 import com.wxyj.user.service.UserService;
 import entity.BCrypt;
+import entity.JwtUtil;
 import entity.Result;
 import entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -122,10 +124,25 @@ public class UserController {
         return new Result<User>(true, StatusCode.OK, "查询成功", user);
     }
 
+    /**
+     * 加载用户的数据
+     *
+     * @param id
+     * @return
+     */
+    @GetMapping("/load/{id}")
+    public Result<User> findByUsername(@PathVariable(name = "id") String id) {
+        //调用UserService实现根据主键查询User
+        User user = userService.findById(id);
+        return new Result<User>(true, StatusCode.OK, "查询成功", user);
+    }
+
+
     /***
      * 查询User全部数据
      * @return
      */
+    @PreAuthorize("hasAnyRole('admin')")
     @GetMapping
     public Result<List<User>> findAll() {
         //调用UserService实现查询所有User

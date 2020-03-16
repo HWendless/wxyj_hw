@@ -192,7 +192,7 @@ public class SpuController {
      * @return
      */
     @GetMapping("/{id}")
-    public Result<Spu> findById(@PathVariable String id){
+    public Result<Spu> findById(@PathVariable(value = "id") String id){
         //调用SpuService实现根据主键查询Spu
         Spu spu = spuService.findById(id);
         return new Result<Spu>(true,StatusCode.OK,"查询成功",spu);

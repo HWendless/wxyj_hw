@@ -5,7 +5,8 @@ spring:
     name: user
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.60.204:3306/changgou_user?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+#    url: jdbc:mysql://192.168.60.204:3306/changgou_user?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://39.104.89.57:3306/changgou_user?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=UTC
     username: root
     password: 123456
 eureka:

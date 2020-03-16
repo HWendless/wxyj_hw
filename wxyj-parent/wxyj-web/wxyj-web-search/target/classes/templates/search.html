@@ -597,21 +597,21 @@
                 </li>
                 <li class="active" th:if="${#maps.containsKey(searchMap,'category')}">
                     <em th:text="${searchMap.category}"></em>
-                    <a th:href="@{${#strings.replace(url,'category'+searchMap.category,'')}}">X</a>
+                    <a th:href="@{${#strings.replace(url,'category='+searchMap.category,'')}}">X</a>
                 </li>
             </ul>
             <ul class="fl sui-tag">
                 <li class="with-x" th:if="${#maps.containsKey(searchMap,'brand')}">
                     <em th:text="${searchMap.brand}"></em>
-                    <a th:href="@{${#strings.replace(url,'brand'+searchMap.brand,'')}}">X</a>
+                    <a th:href="@{${#strings.replace(url,'brand='+searchMap.brand,'')}}">X</a>
                 </li>
                 <li class="with-x" th:if="${#maps.containsKey(searchMap,'price')}">
                     <em th:text="${searchMap.price}"></em>
-                    <a th:href="@{${#strings.replace(url,'price'+searchMap.price,'')}}">X</a>
+                    <a th:href="@{${#strings.replace(url,'price='+searchMap.price,'')}}">X</a>
                 </li>
                 <li class="with-x" th:each="spec:${searchMap}" th:if="${#strings.startsWith(spec.key,'spec_')}">
                     <em th:text="${#strings.repeat(spec.key,'spec_','')}"></em>:<em th:text="${spec.value}"></em>
-                    <a th:href="@{${#strings.replace(url,'spec.key'+spec.value,'')}}">X</a>
+                    <a th:href="@{${#strings.replace(url,'spec.key='+spec.value,'')}}">X</a>
                 </li>
             </ul>
             <form class="fl sui-form form-dark">
@@ -765,7 +765,10 @@
                             <a href="#">评价</a>
                         </li>
                         <li>
-                            <a href="#">价格</a>
+                            <a th:href="@{${sorturl}(sortField=price.sortRule=ASC)}">价格↑</a>
+                        </li>
+                        <li>
+                            <a th:href="@{${sorturl}(sortField=price.sortRule=ASC)}">价格↓</a>
                         </li>
                     </ul>
                 </div>
@@ -804,22 +807,10 @@
                 <div class="sui-pagination pagination-large">
                     <ul>
                         <li class="prev disabled">
-                            <a href="#">«上一页</a>
+                            <a href="@{${url}(pageNum=${pageInfo.currentpage}-1)}">«上一页</a>
                         </li>
-                        <li class="active">
-                            <a href="#">1</a>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li>
-                            <a href="#">3</a>
-                        </li>
-                        <li>
-                            <a href="#">4</a>
-                        </li>
-                        <li>
-                            <a href="#">5</a>
+                        <li th:each="i:${#numbers.sequence(pageInfo.lpage,pageInfo.rpage)}" th:class="${pageInfo.currentpage}==${i}?'active':''">
+                            <a href="@{${url}(pageNum=${i})}" th:text="${i}"></a>
                         </li>
                         <li class="dotted"><span>...</span></li>
                         <li class="next">
