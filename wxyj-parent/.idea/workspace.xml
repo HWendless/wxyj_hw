@@ -2,93 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b1cc7c3-b1ec-4fdc-acf0-e916b5e7fb8e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/wxyj-common/src/main/java/entity/FeignInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-common/src/main/java/entity/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-gateway/wxyj-gateway-web/src/main/java/com/wxyj/filter/AuthorizeFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-gateway/wxyj-gateway-web/src/main/java/com/wxyj/util/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-goods-api/src/main/java/com/wxyj/goods/feign/SpuFeign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-order-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-order-api/src/main/java/com/wxyj/order/pojo/CategoryReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-order-api/src/main/java/com/wxyj/order/pojo/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-order-api/src/main/java/com/wxyj/order/pojo/OrderConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-order-api/src/main/java/com/wxyj/order/pojo/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-order-api/src/main/java/com/wxyj/order/pojo/OrderLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-order-api/src/main/java/com/wxyj/order/pojo/Preferential.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-order-api/src/main/java/com/wxyj/order/pojo/ReturnCause.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-order-api/src/main/java/com/wxyj/order/pojo/ReturnOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-order-api/src/main/java/com/wxyj/order/pojo/ReturnOrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-order-api/src/main/java/com/wxyj/order/pojo/UndoLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-user-api/src/main/java/com/wxyj/user/feign/UserFeign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/src/main/java/com/wxyj/goods/config/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/src/main/resources/public.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/config/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/controller/CategoryReportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/controller/OrderConfigController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/controller/OrderItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/controller/OrderLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/controller/PreferentialController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/controller/ReturnOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/controller/ReturnOrderItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/controller/UndoLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/dao/CategoryReportMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/dao/OrderConfigMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/dao/OrderItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/dao/OrderLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/dao/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/dao/PreferentialMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/dao/ReturnCauseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/dao/ReturnOrderItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/dao/ReturnOrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/dao/UndoLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/CategoryReportService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/OrderConfigService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/OrderItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/OrderLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/PreferentialService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/ReturnCauseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/ReturnOrderItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/ReturnOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/UndoLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/impl/CategoryReportServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/impl/OrderConfigServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/impl/OrderItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/impl/OrderLogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/impl/PreferentialServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/impl/ReturnCauseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/impl/ReturnOrderItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/impl/ReturnOrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/java/com/wxyj/order/service/impl/UndoLogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/resources/public.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-user-oauth/src/main/java/com/wxyj/oauth/intercerceptor/TokenRequestInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxyj-user-oauth/src/main/java/com/wxyj/oauth/util/AdminToken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../code-template/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../code-template/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../code-template/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../code-template/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-goods-api/src/main/java/com/wxyj/goods/feign/SkuFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-goods-api/src/main/java/com/wxyj/goods/feign/SkuFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-goods-api/target/classes/com/wxyj/goods/feign/SkuFeign.class" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service-api/wxyj-service-goods-api/target/classes/com/wxyj/goods/feign/SkuFeign.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/src/main/java/com/wxyj/goods/controller/SkuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/src/main/java/com/wxyj/goods/controller/SkuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/src/main/java/com/wxyj/goods/controller/SpuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/src/main/java/com/wxyj/goods/controller/SpuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/target/classes/com/wxyj/goods/controller/SkuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/target/classes/com/wxyj/goods/controller/SkuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/target/classes/com/wxyj/goods/controller/SpuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-goods/target/classes/com/wxyj/goods/controller/SpuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service/wxyj-service-search/target/classes/com/wxyj/search/service/impl/SkuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-search/target/classes/com/wxyj/search/service/impl/SkuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service/wxyj-service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service/wxyj-service-user/src/main/java/com/wxyj/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-user/src/main/java/com/wxyj/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-service/wxyj-service-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-service/wxyj-service-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-web/wxyj-web-search/target/classes/com/wxyj/search/controller/SkuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-web/wxyj-web-search/target/classes/com/wxyj/search/controller/SkuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxyj-web/wxyj-web-search/target/classes/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/wxyj-web/wxyj-web-search/target/classes/templates/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wxyj-wuhan-yidata/src/main/java/com/wxyj/wuhan/task/chrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../wxyj-wuhan-yidata/src/main/java/com/wxyj/wuhan/task/chrom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wxyj-wuhan-yidata/target/classes/com/wxyj/wuhan/task/chrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/../wxyj-wuhan-yidata/target/classes/com/wxyj/wuhan/task/chrom.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wxyj-wuhan-yidata/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../wxyj-wuhan-yidata/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
@@ -207,8 +122,8 @@
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+            <state relative-caret-position="348">
+              <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -383,7 +298,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="56" />
     <option name="y" value="14" />
     <option name="width" value="1201" />
@@ -778,12 +693,12 @@
       <workItem from="1584271608897" duration="6643000" />
       <workItem from="1584333413462" duration="798000" />
       <workItem from="1584334618708" duration="10190000" />
-      <workItem from="1584349683351" duration="14247000" />
+      <workItem from="1584349683351" duration="14690000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171712000" />
+    <option name="totallyTimeSpent" value="172155000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -795,8 +710,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="451" y="40" width="1201" height="649" extended-state="0" />
-    <editor active="true" />
+    <frame x="56" y="14" width="1201" height="649" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="10" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
@@ -808,7 +722,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.10784314" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.10784314" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -1275,8 +1189,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxyj-service/wxyj-service-order/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        <state relative-caret-position="348">
+          <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="41" />
         </state>
       </provider>
     </entry>
